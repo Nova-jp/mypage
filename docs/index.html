@@ -1,5 +1,6 @@
 <html lang="ja"> 
-<head> 
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <meta name="description" content=""> 
@@ -7,18 +8,26 @@
   <title>Novaのホームページ</title> 
 </head> 
 
-<body> 
-  <h1>Novaのホームページ</h1>
-  <hr/>
+<body>
+  <div id="pagebody">
+    <!--ヘッダー-->
+    <div id="header"><h1><a href="index.html">Novaのホームページ</a></h1></div>
+    
+    <!--main menu-->
+    <ul id="menu">
+      <li id="menu01"><a href="pdf/">pdf files</a></li>
+      <li id="menu02"><a href="pdf/">pdf files</a></li>
+    </ul>
+    <h3>自己紹介</h3>
+    <p>数学科生です。競技プログラミングも少々。</p>
+    <hr/>
 
-  <h3>自己紹介</h3>
-  <p>数学科生です。競技プログラミングも少々。</p>
-  <hr/>
-
-  <h4><a href="pdf/index.html">pdf files</a></h4>
+    <h4><a href="pdf/index.html">pdf files</a></h4>
 
 
-<p>いまはテストです。もうちょっと体裁は整える予定です。</p> 
-
+    <p>いまはテストです。もうちょっと体裁は整える予定です。</p> 
+    <!--footer-->
+    <div id="footer"><address>Copyright (c) Nova All Rights Reserved.</address></div>
+  </div>
 </body> 
 </html>
