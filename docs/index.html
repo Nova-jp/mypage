@@ -1,33 +1,92 @@
-<html lang="ja"> 
+<!DOCTYPE html>
+<html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <meta name="description" content=""> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <title>Novaのホームページ</title> 
-</head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
 
-<body>
-  <div id="pagebody">
-    <!--ヘッダー-->
-    <div id="header"><h1><a href="index.html">Novaのホームページ</a></h1></div>
-    
-    <!--main menu-->
-    <ul id="menu">
-      <li id="menu01"><a href="pdf/">pdf files</a></li>
-      <li id="menu02"><a href="pdf/">pdf files</a></li>
-    </ul>
-    <h3>自己紹介</h3>
-    <p>数学科生です。競技プログラミングも少々。</p>
-    <hr/>
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">Novaのページ</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#about">自己紹介</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#download">リンク</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#contact">連絡先</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image: url('assets/img/intro-bg.jpg');height: 527px;padding: 120px 0px;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">novaのページ</h1>
+                        <p class="intro-text">数学科生です。競技プログラミングも少々。</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>自己紹介</h2>
+                    <p>数学と競技プログラミングをやっています。</p>
+                    <p>数学は代数学や計算機数学に興味をもっています。</p>
+                    <p>競技プログラミングはatcoderで主に取り組んでいます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="download-section content-section text-center" style="background-image: url('assets/img/downloads-bg.jpg');height: 752px;">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>リンク</h1>
+                <blockquote class="blockquote">
+                    <p class="mb-0"><a href="pdf/rsa.pdf">RSA暗号から代数学をみてみよう！</a></p>
+                    <footer class="blockquote-footer" style="color: #dedcda;height: 86px;margin: 0px;min-height: 0px;padding: 14px;">RSA暗号の仕組みを代数学を使って見ています。代数学の面白さが伝わればいいなと思い書きました。</footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p class="mb-0"><a href="https://atcoder.jp/users/Nova">atcoderのアカウント</a></p>
+                    <footer class="blockquote-footer" style="color: #dedcda;height: 86px;margin: 0px;min-height: 0px;padding: 14px;">atcoderのアカウント（Nova）へのリンクです。競技プログラミングをやっている人は是非Twitterなどで繋がりましょう！！</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="content-section text-center" style="height: 637px;padding: 111px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>連絡先</h2>
+                    <p>ご指摘、質問等ありましたら、TwitterにDMしていただけると幸いです。</p>
+                    <ul class="list-inline banner-social-buttons" style="padding: 0px 0px;">
+                        <li class="list-inline-item">&nbsp;</li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;<a href="https://twitter.com/Prod103kanre">Twitter</a></span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © Nova</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+</body>
 
-    <h4><a href="pdf/index.html">pdf files</a></h4>
-
-
-    <p>いまはテストです。もうちょっと体裁は整える予定です。</p> 
-    <!--footer-->
-    <div id="footer"><address>Copyright (c) Nova All Rights Reserved.</address></div>
-  </div>
-</body> 
 </html>
